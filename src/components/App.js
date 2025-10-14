@@ -11,7 +11,7 @@ const App = () => {
     "Deploy the React app"
   ])
   const handleComplete = () => {
-    setTodoItem(true)
+    setTodoItem(false)
   }
   return (
     <div>
