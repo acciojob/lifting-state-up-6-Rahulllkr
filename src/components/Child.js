@@ -1,6 +1,6 @@
 import React from 'react'
 
-const child = ({todos,handleComplete}) => {
+const Child = ({todos,handleComplete}) => {
   return (
     <>
     <h1>Child Component</h1>
@@ -20,4 +20,4 @@ const child = ({todos,handleComplete}) => {
   )
 }
 
-export default child
+export default Child
