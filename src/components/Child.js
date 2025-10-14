@@ -9,8 +9,10 @@ const Child = ({todos,handleComplete}) => {
             todos.map((item,index) => {
                 return (
                     <div style={{display:"flex"}} key={index}>
-                        <li>{item.text}</li>
-                        {!item.completed && (<button onClick={() => handleComplete(index)}>Complete</button>)}
+                        <li>
+                            {item.text}
+                            {!item.completed && (<button onClick={() => handleComplete(index)}>Complete</button>)}
+                        </li>
                     </div>
                 )
             })
