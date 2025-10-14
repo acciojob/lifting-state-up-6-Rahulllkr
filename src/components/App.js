@@ -10,11 +10,12 @@ const App = () => {
     { text: "Deploy the React app", completed: false }
   ]);
   const handleComplete = (index) => {
-    const updatedTodo = todos.map((item,itemIndex) => 
-      index === itemIndex ? {...item,completed:true}: item
-    )
-    setTodos(updatedTodo)
-  }
+    setTodos(prevTodos =>
+      prevTodos.map((todo, i) =>
+        i === index ? { ...todo, completed: true } : todo
+      )
+    );
+  };
   return (
     <div>
       <h1>Parent Component</h1>
