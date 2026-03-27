@@ -13,6 +13,7 @@ const Child = ({todos,handleComplete}) => {
                             {item.text}
                             {!item.completed && (<button onClick={() => handleComplete(index)}>Complete</button>)}
                         </li>
+                        <p>Team velocity hackathon</p>
                     </div>
                 )
             })
