@@ -10,10 +10,11 @@ const Child = ({todos,handleComplete}) => {
                 return (
                     <div style={{display:"flex"}} key={index}>
                         <li>
+                            console.log(item)
                             {item.text}
                             {!item.completed && (<button onClick={() => handleComplete(index)}>Complete</button>)}
                         </li>
-                        <p>Team velocity hackathon</p>
+                        
                     </div>
                 )
             })
